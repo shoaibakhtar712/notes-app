@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>My Notes</h2>
+        <p>Every task you write here is a promise either you keep it, or you admit you didn’t.</p>
+      </div>
+
+      <ul class="notes-list"> </ul>
+    </aside>
+
+    <!-- Main Editor -->
+    <main class="editor">
+      <input type="text" class="title-input" placeholder="Note title..." id="title" />
+      <div class="container">
+        <div class="editor-body">
+          <textarea class="content-input" placeholder="Write your notes here..." id="textbox"></textarea>
+        </div>
+        <div class="editor-actions">
+          <button class="add-btn">Edit</button>
+          <button class="save-btn" id="save">Create New</button>
+          <button class="delete-btn">Delete</button>
+        </div>
+      </div>
+
+
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

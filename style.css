@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #112233;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sidebar-header h2 {
+  color: #DF6756;
+  font-size: 1.7rem;
+  user-select: none;
+}
+
+.sidebar-header p {
+  font-size: .7rem;
+  text-align: center;
+  font-style: italic;
+  margin-top: 2px;
+  user-select: none;
+}
+
+
+.add-btn {
+  width: 75px;
+  padding: 8px 15px;
+  border: none;
+  background: #DF6756;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.notes-list {
+  list-style: none;
+  overflow-y: auto;
+}
+
+.note-item {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  text-transform: lowercase;
+  background: #ffffff;
+  color: black;
+  font-weight: 400;
+  transition: all 1s cubic-bezier(0.19, 1, 0.35, 1);
+  font-size: .9rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.note-item::first-letter {
+  text-transform: capitalize;
+}
+
+.note-item:hover {
+  background: #DF6756;
+  color: white;
+}
+
+.active {
+  background: #DF6756;
+  color: white;
+}
+
+/* Editor */
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(to right, #112233, #2B3A67);
+}
+
+.title-input {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #FFF4E4;
+  text-transform: capitalize;
+  outline: 2px solid #386491;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.editor-body {
+  height: 78vh;
+  width: 80vw;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+
+.content-input {
+  flex: 1;
+  padding: 20px 30px 20px 20px;
+  resize: none;
+  background-color: #FFF4E4;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: auto;
+  scrollbar-width: none;
+  text-align: justify;
+
+}
+
+.editor-actions {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.delete-btn {
+  background: #DF6756;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: .9rem;
+}
+
+.save-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.save-btn:hover {
+  background-color: #DF6756;
+  color: white;
+
+}
