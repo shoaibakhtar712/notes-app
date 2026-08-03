@@ -1,6 +1,6 @@
 # 📝 Notes App
 
-A simple and responsive Notes App built using **HTML**, **CSS**, and **JavaScript**. Create, edit, save, and delete notes with an intuitive interface. Notes are automatically stored in the browser using Local Storage, so they remain available even after refreshing or reopening the application.
+A simple and responsive Notes App built using **HTML**, **CSS**, and **JavaScript**. Create, edit, save, and delete notes with an intuitive interface. Notes are automatically stored in the browser using Local Stoarge, so they remain available even after refreshing or reopening the application.
 
 ---
 
