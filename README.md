@@ -39,6 +39,7 @@ A simple and responsive Notes App built using **HTML**, **CSS**, and **JavaScrip
 <p align="center">
   <img src="./screenshots/Notes UI.png" alt="Notes App" width="800">
 </p>
+
 ---
 
 ## 🚀 Getting Started
